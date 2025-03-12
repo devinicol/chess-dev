@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
-import plugintools from 'vite-plugin-tools'
+import loggingpatcher from 'vite-logging-patcher'
 
 export default defineConfig({
-  plugins: [react(),plugintools()],
+  plugins: [react(),loggingpatcher()],
   base: '',
   server: {
     port: 3000,
