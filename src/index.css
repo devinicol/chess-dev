@@ -1,0 +1,89 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #2c3e50;
+  background-color: #f0f4f8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #4d4d4d;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #646cff;
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f0f4f8;
+    background-color: #1a1f2c;
+  }
+  
+  .game-info,
+  .game-status,
+  .move-history {
+    background-color: #2c3e50;
+    color: #f0f4f8;
+  }
+  
+  .move-number {
+    color: #b7c0d8;
+  }
+  
+  .no-moves, .no-game {
+    color: #b7c0d8;
+  }
+  
+  .player-info {
+    background-color: #1a1f2c;
+  }
+}
